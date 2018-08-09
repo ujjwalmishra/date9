@@ -1,0 +1,6 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/ujjwal/Desktop/date9/conf/routes,/home/ujjwal/Desktop/date9/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/home/ujjwal/Desktop/date9/conf/logback.xml,/home/ujjwal/Desktop/date9/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/home/ujjwal/Desktop/date9/conf/application.conf,/home/ujjwal/Desktop/date9/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/ujjwal/Desktop/date9/conf/secure.conf,/home/ujjwal/Desktop/date9/target/scala-2.11/classes/secure.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/ujjwal/Desktop/date9/conf/generated.keystore,/home/ujjwal/Desktop/date9/target/scala-2.11/classes/generated.keystore)[0m
