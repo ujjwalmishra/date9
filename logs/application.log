@@ -1,2 +1,0 @@
-2018-08-09 15:59:15,458 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
-2018-08-09 15:59:16,652 [DEBUG] from application.ErrorHandler in application-akka.actor.default-dispatcher-6 - onClientError: statusCode = 404, uri = /favicon.ico, message = 
