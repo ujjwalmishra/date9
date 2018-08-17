@@ -17,7 +17,8 @@ trait ArticleComponents
   extends WithControllerComponents
     with UserComponents
     with CommonsComponents
-    with WithExecutionContextComponents {
+    with WithExecutionContextComponents 
+    {
 
   private lazy val defaultOffset = 0L
   private lazy val defaultLimit = 20L

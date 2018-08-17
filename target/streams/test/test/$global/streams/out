@@ -1,0 +1,125 @@
+[0m[[0m[0mdebug[0m] [0m[0mjavaOptions: Vector()[0m
+[0m[[0m[0mdebug[0m] [0m[0mForking tests - parallelism = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreate a single-thread test executor[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunner for org.scalatest.tools.Framework produced 14 initial tasks for 14 tests.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(users.controllers.UserRegistrationTest, sbt.ForkMain$SubclassFingerscan@69676542, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mUserRegistrationTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mUser registration[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should success when registration data is valid[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should use email as username in order to generate proper Jwt token[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should fail because given password was too short[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should fail because login has already been taken[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should fail because email has already been taken[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 5 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(articles.CommentListTest, sbt.ForkMain$SubclassFingerscan@7925fc00, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mCommentListTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mComment list[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return empty array if article does not have any comments[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return given article's comment[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return two comments, newer a the top[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 3 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(articles.ArticleFavoriteTest, sbt.ForkMain$SubclassFingerscan@f7ce98f, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mArticleFavoriteTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFavorite article[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should mark article as favorited for current user[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(articles.CommentDeleteTest, sbt.ForkMain$SubclassFingerscan@1a7a3f2c, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mCommentDeleteTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDelete comment[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should allow to delete authenticated user's comment[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should not allow to delete someone else's comment[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 2 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(articles.CommentCreateTest, sbt.ForkMain$SubclassFingerscan@6411ef08, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mCommentCreateTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mCreate comment[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create comment for authenticated user[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(commons.repositories.BaseRepoTest, sbt.ForkMain$SubclassFingerscan@284f7d61, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBaseRepoTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBase repo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should sort by id desc by default[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should sort by age desc and id asc[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set modified at date time when updated[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 3 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(users.controllers.UserUpdateTest, sbt.ForkMain$SubclassFingerscan@3cb1fc9a, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mUserUpdateTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mUser update[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return new json web token[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(articles.ArticleCreateTest, sbt.ForkMain$SubclassFingerscan@736d6818, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mArticleCreateTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mCreate article[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create valid article without tags[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create valid article with dragons tag[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create article and associate it with existing dragons tag[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create article and set author[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate slug based on title[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 5 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(core.tags.TagListTest, sbt.ForkMain$SubclassFingerscan@3cc9b83c, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTagListTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTags list[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return empty array within wrapper when there are not any tags[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return array with one tag within wrapper[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 2 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(users.controllers.LoginTest, sbt.ForkMain$SubclassFingerscan@250c1e67, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLoginTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLogin[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should allow valid user and password[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should block not existing user[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should block user with invalid password[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 3 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(authentication.JwtAuthenticationTest, sbt.ForkMain$SubclassFingerscan@2ccc4e35, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mJwtAuthenticationTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAuthentication[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should allow everyone to public API[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should block request without jwt token[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should block request with invalid jwt token[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should allow authenticated user to secured API[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 4 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(articles.ArticleUpdateTest, sbt.ForkMain$SubclassFingerscan@31c483b7, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mArticleUpdateTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mUpdate article[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should update title and slug[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(articles.ArticleDeleteTest, sbt.ForkMain$SubclassFingerscan@59b88798, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mArticleDeleteTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDelete article[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should delete associated tag too[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(articles.ArticleListTest, sbt.ForkMain$SubclassFingerscan@2b1b1d7f, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mArticleListTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mArticle list[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return single article and article count[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return single article with dragons tag and article count[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return empty array of articles and count when requested limit is 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return two articles sorted by last created date desc by default[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return article created by requested user[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return empty array of articles when requested user have not created any articles[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return article with requested tag[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return empty array of articles when no articles with requested tag exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return article created by followed user[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 9 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunner for com.novocode.junit.JUnitFramework produced 0 initial tasks for 0 tests.[0m
+[0m[[0m[0minfo[0m] [0m[0mScalaTest[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 58 seconds, 515 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 41[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 14, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 41, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mSummary for JUnit not available.[0m
+[0m[[0m[0minfo[0m] [0m[0mPassed: Total 41, Failed 0, Errors 0, Passed 41[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	users.controllers.UserRegistrationTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	articles.CommentListTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	articles.ArticleFavoriteTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	articles.CommentDeleteTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	articles.CommentCreateTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	commons.repositories.BaseRepoTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	users.controllers.UserUpdateTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	articles.ArticleCreateTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	core.tags.TagListTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	users.controllers.LoginTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	authentication.JwtAuthenticationTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	articles.ArticleUpdateTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	articles.ArticleDeleteTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	articles.ArticleListTest[0m

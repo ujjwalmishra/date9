@@ -3,7 +3,7 @@ package authentication.models
 import java.time.Instant
 
 import commons.models.{BaseId, Email, WithId}
-import slick.jdbc.H2Profile.api.{DBIO => _, MappedTo => _, Rep => _, TableQuery => _, _}
+import slick.jdbc.MySQLProfile.api.{DBIO => _, MappedTo => _, Rep => _, TableQuery => _, _}
 
 case class SecurityUser(id: SecurityUserId,
                         email: Email,

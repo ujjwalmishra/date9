@@ -1,0 +1,16 @@
+#Successful Tests
+#Sun Aug 12 17:16:07 CDT 2018
+articles.ArticleUpdateTest=1534112158611
+articles.ArticleDeleteTest=1534112159605
+users.controllers.LoginTest=1534112155317
+articles.CommentDeleteTest=1534112141621
+articles.ArticleCreateTest=1534112152691
+authentication.JwtAuthenticationTest=1534112157505
+core.tags.TagListTest=1534112153573
+users.controllers.UserRegistrationTest=1534112133660
+commons.repositories.BaseRepoTest=1534112146645
+articles.CommentCreateTest=1534112142702
+articles.ArticleFavoriteTest=1534112139162
+users.controllers.UserUpdateTest=1534112147821
+articles.CommentListTest=1534112137384
+articles.ArticleListTest=1534112166882

@@ -6,7 +6,7 @@ import java.time.Instant
 import commons.models.{BaseId, IdMetaModel, Property, WithId}
 import users.models.UserId
 import play.api.libs.json._
-import slick.jdbc.H2Profile.api.{DBIO => _, MappedTo => _, Rep => _, TableQuery => _, _}
+import slick.jdbc.MySQLProfile.api.{DBIO => _, MappedTo => _, Rep => _, TableQuery => _, _}
 
 case class Comment(id: CommentId,
                    articleId: ArticleId,

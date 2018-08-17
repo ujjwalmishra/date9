@@ -22,6 +22,7 @@ libraryDependencies ++= Seq(
   "commons-validator" % "commons-validator" % "1.6",
   "com.github.slugify" % "slugify" % "2.2",
   "com.h2database" % "h2" % "1.4.197",
+  "mysql" % "mysql-connector-java" % "5.1.46",
   "org.mindrot" % "jbcrypt" % "0.4",
   "org.pac4j" %% "play-pac4j" % "5.0.0",
   "org.pac4j" % "pac4j-jwt" % "2.2.1",

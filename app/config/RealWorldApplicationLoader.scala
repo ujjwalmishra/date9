@@ -6,6 +6,7 @@ import _root_.controllers.AssetsComponents
 import articles.ArticleComponents
 import authentication.AuthenticationComponents
 import users.UserComponents
+import play.Logger
 import play.api.ApplicationLoader.Context
 import play.api._
 import play.api.cache.AsyncCacheApi
@@ -40,12 +41,16 @@ class RealWorldComponents(context: Context) extends BuiltInComponentsFromContext
     new DefaultSlickApi(environment, configuration, applicationLifecycle)(executionContext)
 
   override lazy val databaseConfigProvider: DatabaseConfigProvider = new DatabaseConfigProvider {
-    def get[P <: BasicProfile]: DatabaseConfig[P] = slickApi.dbConfig[P](DbName("default"))
+    def get[P <: BasicProfile]: DatabaseConfig[P] = { 
+      println("db config loaded")
+      slickApi.dbConfig[P](DbName("default"))
+    }
   }
 
   override lazy val dynamicEvolutions: DynamicEvolutions = new DynamicEvolutions
 
   def onStart(): Unit = {
+    Logger.info("Starting server---------------")
     // applicationEvolutions is a val and requires evaluation
     applicationEvolutions
   }

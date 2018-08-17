@@ -1,12 +1,24 @@
-# ![RealWorld Example App using Scala and Play Framework](logo.png)
+## Services & Endpoints:
+ * Register User
+ * Login User
+ * Logout User
+ * Reset Password
+ * Add profile data
+ * Edit profile data
+ * Deactivate account
+ * Delete account
+ * Get users by location
+ * Get users by location and radius
+ * Get hot locations
+ * Get user profile by id
+ * Block user
+ * Reject User
+ * Accept User
+ * Open chat session with user
+ * Close chat session with user
+ * Go invisible
+ 
 
-> ### Scala & Play Framework codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld) spec and API.
-
-### [Referential demo](https://react-redux.realworld.io/)
-
-This codebase was created to demonstrate a fully fledged fullstack application built with **Scala & Play Framework** including CRUD operations, authentication, routing, pagination, and more.
-
-For more information on how to this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
 
 # Getting started
 
