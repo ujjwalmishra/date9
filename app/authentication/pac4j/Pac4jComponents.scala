@@ -27,6 +27,8 @@ private[authentication] trait Pac4jComponents extends WithExecutionContextCompon
 
   lazy val usernamePasswordAuthenticator: Authenticator[CredentialsWrapper] = wire[UsernameAndPasswordAuthenticator]
 
+  lazy val passwordResetter : PasswordResetter[PasswordResetWrapper] = wire[PasswordReset]
+
   def configuration: Configuration
 
   private lazy val signatureConfig = {

@@ -10,4 +10,6 @@ trait SecurityUserUpdater {
 
   def update(currentEmail: Email, securityUserUpdate: SecurityUserUpdate): DBIO[SecurityUser]
 
+  def resetPassword(email: Email) : Boolean
+
 }

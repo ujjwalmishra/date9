@@ -16,6 +16,8 @@ trait UserComponents extends AuthenticationComponents with WithControllerCompone
   lazy val userRepo: UserRepo = wire[UserRepo]
   lazy val userRegistrationService: UserRegistrationService = wire[UserRegistrationService]
   lazy val userRegistrationValidator: UserRegistrationValidator = wire[UserRegistrationValidator]
+  lazy val passwordResetService: PasswordResetService = wire[PasswordResetService]
+  lazy val passwordResetValidator: PasswordResetValidator = wire[PasswordResetValidator]
   lazy val userUpdateValidator: UserUpdateValidator = wire[UserUpdateValidator]
 
   lazy val passwordValidator: PasswordValidator = wire[PasswordValidator]
