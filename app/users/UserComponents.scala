@@ -16,13 +16,11 @@ trait UserComponents extends AuthenticationComponents with WithControllerCompone
   lazy val userRepo: UserRepo = wire[UserRepo]
   lazy val userRegistrationService: UserRegistrationService = wire[UserRegistrationService]
   lazy val userRegistrationValidator: UserRegistrationValidator = wire[UserRegistrationValidator]
-  lazy val passwordResetService: PasswordResetService = wire[PasswordResetService]
-  lazy val passwordResetValidator: PasswordResetValidator = wire[PasswordResetValidator]
   lazy val userUpdateValidator: UserUpdateValidator = wire[UserUpdateValidator]
 
   lazy val passwordValidator: PasswordValidator = wire[PasswordValidator]
   lazy val usernameValidator: UsernameValidator = wire[UsernameValidator]
-  lazy val emailValidator: EmailValidator = wire[EmailValidator]
+  override lazy val emailValidator: EmailValidator = wire[EmailValidator]
 
   lazy val profileController: ProfileController = wire[ProfileController]
   lazy val profileService: ProfileService = wire[ProfileService]
@@ -41,6 +39,8 @@ trait UserComponents extends AuthenticationComponents with WithControllerCompone
       loginController.login
     case PUT(p"/user") =>
       userController.update
+    case POST(p"/user/reset") =>
+      userController.resetPassword
     case GET(p"/profiles/$rawUsername") =>
       profileController.findByUsername(Username(rawUsername))
     case POST(p"/profiles/$rawUsername/follow") =>

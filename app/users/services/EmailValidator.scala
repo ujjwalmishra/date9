@@ -7,7 +7,7 @@ import slick.dbio.DBIO
 
 import scala.concurrent.ExecutionContext
 
-private[users] class EmailValidator(securityUserProvider: SecurityUserProvider,
+class EmailValidator(securityUserProvider: SecurityUserProvider,
                                     implicit private val ec: ExecutionContext) {
 
   private val emailValidator = org.apache.commons.validator.routines.EmailValidator.getInstance()

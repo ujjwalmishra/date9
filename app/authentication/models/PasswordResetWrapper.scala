@@ -1,7 +1,7 @@
 package authentication.models
 
 import play.api.libs.json.{Format, Json}
-import common.models.Email;
+import commons.models.Email;
 
 case class PasswordResetWrapper(email: Email)
 

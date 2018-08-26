@@ -1,8 +1,9 @@
 package authentication.api
 
 import play.api.mvc.Request
+import commons.models.{Email}
 import slick.dbio.DBIO
 
-trait PasswordResetter[RequestBodyType] {
-  def reset(request: Request[RequestBodyType]): DBIO[String]
+trait PasswordResetter {
+  def reset(email: Email): DBIO[String]
 }

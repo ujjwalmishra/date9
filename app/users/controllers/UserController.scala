@@ -5,6 +5,7 @@ import authentication.api._
 import authentication.models.{JwtToken, SecurityUserId, SecurityUserIdProfile}
 import commons.controllers.RealWorldAbstractController
 import users.models._
+import authentication.models.{PasswordResetWrapper}
 import users.services.{UserRegistrationService, UserService}
 import play.api.libs.json._
 import play.api.mvc._
@@ -12,6 +13,7 @@ import play.api.mvc._
 class UserController(authenticatedAction: AuthenticatedActionBuilder,
                      actionRunner: ActionRunner,
                      userRegistrationService: UserRegistrationService,
+                     passwordResetService: PasswordResetter,
                      userService: UserService,
                      jwtAuthenticator: TokenGenerator[SecurityUserIdProfile, JwtToken],
                      components: ControllerComponents)
@@ -48,6 +50,16 @@ class UserController(authenticatedAction: AuthenticatedActionBuilder,
       .map(Json.toJson(_))
       .map(Ok(_))
       .recover(handleFailedValidation)
+  }
+
+  def resetPassword: Action[PasswordResetWrapper] = Action.async(validateJson[PasswordResetWrapper]) { request =>
+    actionRunner.runTransactionally(passwordResetService.reset(request.body.email))
+      .map(resetMessage => {
+        resetMessage
+      })
+      .map(Json.toJson(_))
+      .map(Ok(_))
+
   }
 
   private def generateToken(securityUserId: SecurityUserId) = {

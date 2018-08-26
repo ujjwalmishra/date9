@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/ujjwal/Desktop/date9/app/users/UserComponents.scala:31:51: Cannot find a value of type: [authentication.api.Authenticator[authentication.models.CredentialsWrapper]][0m
-[0m[[0m[31merror[0m] [0m[0m  lazy val loginController: LoginController = wire[LoginController][0m
-[0m[[0m[31merror[0m] [0m[0m                                                  ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/ujjwal/Desktop/date9/app/users/services/PasswordResetValidator.scala:5:23: imported `EmailValidator' is permanently hidden by definition of class EmailValidator in package services[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport users.services.EmailValidator[0m
+[0m[[0m[33mwarn[0m] [0m[0m                      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

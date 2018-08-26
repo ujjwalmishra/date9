@@ -1,14 +1,16 @@
 package authentication.pac4j
 
 import authentication.api._
-import authentication.models.{CredentialsWrapper, JwtToken, SecurityUserIdProfile}
+import authentication.models.{CredentialsWrapper, JwtToken, SecurityUserIdProfile, PasswordResetWrapper}
 import authentication.pac4j.controllers.{Pack4jAuthenticatedActionBuilder, Pack4jOptionallyAuthenticatedActionBuilder}
-import authentication.pac4j.services.{JwtTokenGenerator, UsernameAndPasswordAuthenticator}
+import authentication.pac4j.services.{JwtTokenGenerator, UsernameAndPasswordAuthenticator, PasswordReset}
+import users.services.PasswordResetValidator
 import authentication.repositories.SecurityUserRepo
 import com.softwaremill.macwire.wire
 import commons.CommonsComponents
 import commons.config.WithExecutionContextComponents
 import commons.services.ActionRunner
+import users.services.EmailValidator
 import org.pac4j.core.profile.CommonProfile
 import org.pac4j.jwt.config.signature.SecretSignatureConfiguration
 import org.pac4j.jwt.credentials.authenticator.{JwtAuthenticator => Pac4jJwtAuthenticator}
@@ -27,7 +29,11 @@ private[authentication] trait Pac4jComponents extends WithExecutionContextCompon
 
   lazy val usernamePasswordAuthenticator: Authenticator[CredentialsWrapper] = wire[UsernameAndPasswordAuthenticator]
 
-  lazy val passwordResetter : PasswordResetter[PasswordResetWrapper] = wire[PasswordReset]
+  lazy val passwordResetter : PasswordResetter = wire[PasswordReset]
+
+  lazy val passwordResetValidator: PasswordResetValidator = wire[PasswordResetValidator]
+
+  lazy val emailValidator: EmailValidator = wire[EmailValidator]
 
   def configuration: Configuration
 
