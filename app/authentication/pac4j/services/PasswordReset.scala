@@ -9,6 +9,7 @@ import commons.utils.DbioUtils
 import users.services.PasswordResetValidator
 import commons.exceptions.ValidationException
 import commons.models.Email
+import notifiers._
 import org.mindrot.jbcrypt.BCrypt
 import play.api.mvc.Request
 import slick.dbio.DBIO
@@ -18,7 +19,8 @@ import scala.concurrent.ExecutionContext
 private[authentication] class PasswordReset(tokenGenerator: TokenGenerator[SecurityUserIdProfile, JwtToken],
                                                                actionRunner: ActionRunner,
                                                                passwordResetValidator: PasswordResetValidator,
-                                                               securityUserRepo: SecurityUserRepo)
+                                                               securityUserRepo: SecurityUserRepo,
+                                                               mailer: MailerComponent)
                                                               (implicit private val ec: ExecutionContext)
   extends PasswordResetter {
 
@@ -50,6 +52,7 @@ private[authentication] class PasswordReset(tokenGenerator: TokenGenerator[Secur
 
   private def sendEmail(token: String, email: Email ): String = {
       println(s"Sending email with token $token to email $email")
+      mailer.sendEmail
       return "Done"
   }  
 

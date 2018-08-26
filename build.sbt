@@ -1,4 +1,4 @@
-name := """real-world-example-project"""
+name := """Date9"""
 
 version := "1.0"
 
@@ -27,6 +27,9 @@ libraryDependencies ++= Seq(
   "org.pac4j" %% "play-pac4j" % "5.0.0",
   "org.pac4j" % "pac4j-jwt" % "2.2.1",
   "org.pac4j" % "pac4j-http" % "2.2.1",
+
+  "com.typesafe.play" %% "play-mailer" % "6.0.1",
+  "com.typesafe.play" %% "play-mailer-guice" % "6.0.1",
 
   "com.softwaremill.macwire" %% "macros" % "2.3.1" % "provided",
 

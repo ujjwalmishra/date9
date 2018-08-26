@@ -4,7 +4,7 @@
 		module="real-world-example-project_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20180813055509"
+		publication="20180826022225"
 	>
 		<description>
 		real-world-example-project
@@ -65,6 +65,8 @@
 		<dependency org="org.pac4j" name="play-pac4j_2.12" rev="5.0.0" conf="compile->default(compile)"/>
 		<dependency org="org.pac4j" name="pac4j-jwt" rev="2.2.1" conf="compile->default(compile)"/>
 		<dependency org="org.pac4j" name="pac4j-http" rev="2.2.1" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-mailer_2.12" rev="6.0.1" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-mailer-guice_2.12" rev="6.0.1" conf="compile->default(compile)"/>
 		<dependency org="com.softwaremill.macwire" name="macros_2.12" rev="2.3.1" conf="provided->default(compile)"/>
 		<dependency org="org.scalatestplus.play" name="scalatestplus-play_2.12" rev="3.1.2" conf="test->default(compile)"/>
 	</dependencies>
