@@ -20,6 +20,7 @@ import play.api.mvc._
 import play.api.routing.Router
 import play.filters.cors.{CORSConfig, CORSFilter}
 import slick.basic.{BasicProfile, DatabaseConfig}
+import com.typesafe.config.{Config, ConfigFactory}
 
 class RealWorldApplicationLoader extends ApplicationLoader {
   def load(context: Context): Application = new RealWorldComponents(context).application
@@ -46,6 +47,8 @@ class RealWorldComponents(context: Context) extends BuiltInComponentsFromContext
       slickApi.dbConfig[P](DbName("default"))
     }
   }
+
+  override val config : Config = ConfigFactory.load() //I suppose play looks for application.conf by default
 
   override lazy val dynamicEvolutions: DynamicEvolutions = new DynamicEvolutions
 

@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/ujjwal/Desktop/date9/app/commons/controllers/RealWorldAbstractController.scala:18:45: Cannot find a public constructor nor a companion object for [play.api.libs.mailer.MailerClient][0m
-[0m[[0m[31merror[0m] [0m[0m  lazy val mailerClient: MailerClient = wire[MailerClient][0m
-[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ujjwal/Desktop/date9/app/config/RealWorldApplicationLoader.scala:28:7: class RealWorldComponents needs to be abstract, since method config in trait MailerComponents of type => com.typesafe.config.Config is not defined[0m
+[0m[[0m[31merror[0m] [0m[0mclass RealWorldComponents(context: Context) extends BuiltInComponentsFromContext(context)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

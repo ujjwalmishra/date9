@@ -15,8 +15,6 @@ abstract class RealWorldAbstractController (controllerComponents: ControllerComp
 
   implicit protected val executionContext: ExecutionContext = defaultExecutionContext
 
-  lazy val mailerClient: MailerClient = wire[MailerClient]
-
   protected def validateJson[A: Reads]: BodyParser[A] = parse.json.validate(
     _.validate[A].asEither.left.map(e => BadRequest(JsError.toJson(e)))
   )
