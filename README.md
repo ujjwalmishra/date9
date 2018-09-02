@@ -1,8 +1,8 @@
 ## Services & Endpoints:
- * Register User
- * Login User
- * Logout User
- * Reset Password
+ * ~~Register User~~
+ * ~~Login User~~
+ * ~~Logout User~~
+ * ~~Reset Password~~
  * Add profile data
  * Edit profile data
  * Deactivate account

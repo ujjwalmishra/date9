@@ -23,7 +23,7 @@ trait ArticleComponents
   private lazy val defaultOffset = 0L
   private lazy val defaultLimit = 20L
 
-  def authenticatedAction: AuthenticatedActionBuilder
+  //def authenticatedAction: AuthenticatedActionBuilder
 
   lazy val articleController: ArticleController = wire[ArticleController]
   lazy val articleWriteService: ArticleWriteService = wire[ArticleWriteService]
